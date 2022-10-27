@@ -16,7 +16,7 @@ const Product = (props) => {
   <Card.Text>
     id:{props.product.id} descripcion:{props.product.description}
   </Card.Text>
-  <Button variant="primary" onClick={() => navigate(`/productos/${props.product.id}`) }>Go somewhere</Button>
+  <Button variant="primary" onClick={() => navigate(`/productos/${props.product.id}`) }>Detalle</Button>
 </Card.Body>
 </Card>
 </Col>

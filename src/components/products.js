@@ -1,7 +1,7 @@
 import React from "react";
-import Product from "./producto";
+import Product from "./product";
 import { Row, Container } from 'react-bootstrap'
-import DetalleProd from "./detalleProd";
+import DetalleProd from "./DetalleProduct";
 
 
 const Products = (id) => {

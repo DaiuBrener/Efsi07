@@ -1,5 +1,5 @@
 import React from "react";
-import Product from "./producto";
+import Product from "./product";
 import { Row, Container } from 'react-bootstrap'
 
 const HomeProducts = () => {

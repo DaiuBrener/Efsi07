@@ -1,11 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
-import Products from './components/productos';
+import Products from './components/products';
 import Home from './views/home';
-import Product from './components/producto';
-import DetalleProd from './components/detalleProd';
+import DetalleProd from './components/DetalleProduct';
 
 
 function App() {
