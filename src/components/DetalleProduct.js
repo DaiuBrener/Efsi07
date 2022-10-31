@@ -12,26 +12,27 @@ const DetalleProd = (props) => {
     const [product, setProduct] = React.useState({});
     React.useEffect(() => {
         fetch(`https://dummyjson.com/products/${id}`)
-        .then(res => res.json())
-        .then(res => setProduct(res))
-        .catch(err => console.error(err));
+            .then(res => res.json())
+            .then(res => setProduct(res))
+            .catch(err => console.error(err));
     }, []);
     console.log(product)
-    return(
+    return (
+
         <Container>
-  <Card style={{ width: '70rem' }}>
-<Card.Img variant="top" src={product && product.thumbnail} />
-<Card.Body>
-  <Card.Title>{product && product.title}</Card.Title>
-  <Card.Text>
-    id:{product.id}
-    </Card.Text>
-    <Card.Text>
-    descripcion:{product.description}
-    </Card.Text> 
-</Card.Body>
-</Card>
-</Container>
+            <center>
+                <Card style={{ width: '30rem' }}>
+                    <Card.Img variant="top" src={product && product.thumbnail} />
+                    <Card.Body>
+                        <Card.Title>{product && product.title}</Card.Title>
+                        <Card.Text>
+                            descripcion:{product.description}
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+            </center>
+        </Container>
+
     )
 }
 
